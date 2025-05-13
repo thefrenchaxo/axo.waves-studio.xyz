@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-chrome-512x512.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GNOME 48, quoi de neuf ?">
+    <meta property="og:site_name" content="Axo.">
+    <meta property="og:url" content="https://axo.waves-studio.xyz/blog/2025/03/22/gnome-45-quoi-de-neuf/index.html">
+    <meta property="og:image" content="https://axo.waves-studio.xyz/blog/2025/03/22/gnome-45-quoi-de-neuf/banner.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:description" content="Le 19 mars, le projet GNOME présentait son nouveau bébé : GNOME 48, une nouvelle version bourrée de nouveautés. De l'amélioration ducentre de notifications à l'introduction de l'HDR, voici un résumé des principales nouveautés.">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://axo.waves-studio.xyz/blog/2025/03/22/gnome-45-quoi-de-neuf/banner.png">
+    
+
+    <title>GNOME 48, quoi de neuf ?</title>
+    <style>
+        @font-face {
+            font-family: IbmVga;
+            src: url(/assets/Web437_IBM_VGA_8x16.woff) format('woff');
+        }
+        body {
+            background-color: black;
+            color: lime;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+
+            line-height: 1;
+            letter-spacing: 0;
+            font-family: IbmVga, monospace;
+            font-size: 1.5vw;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        pre {
+            line-height: 1;
+            letter-spacing: 0;
+            font-family: IbmVga, monospace;
+            font-size: 3.5vw;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        a {
+            color: lime;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: rgb(0, 0, 0);
+            background-color: lime;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+         █████╗ ██╗  ██╗ ██████╗              
+        ██╔══██╗╚██╗██╔╝██╔═══██╗             
+        ███████║ ╚███╔╝ ██║   ██║             
+        ██╔══██║ ██╔██╗ ██║   ██║             
+        ██║  ██║██╔╝ ██╗╚██████╔╝██╗          
+        ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝          
+                                              
+                                              
+┌────────────────────────────────────────────┐
+│                                            │
+│            ░█▀▄░█░░░█▀█░█▀▀░░░             │
+│            ░█▀▄░█░░░█░█░█░█░▀░             │
+│            ░▀▀░░▀▀▀░▀▀▀░▀▀▀░▀░             │
+│                                            │
+│      ───────────────────────────────       │
+│       ┌────────────────────────────┐       │
+│       │   <a href="/blog">Voir tout les articles</a>   │       │
+│       └────────────────────────────┘       │
+│                                            │
+│       ┌────────────────────────────┐       │
+│       │  GNOME 48, quoi de neuf ?  │       │
+│ ┌─────┴────────────────────────────┴─────┐ │
+│ │                                        │ │
+│ │ Le 19 mars, le projet GNOME présentait │ │
+│ │ son nouveau bébé : GNOME 48, une       │ │
+│ │ nouvelle version bourrée de            │ │
+│ │ nouveautés. De l'amélioration du       │ │
+│ │ centre de notifications à              │ │
+│ │ l'introduction de l'HDR, voici un      │ │
+│ │ résumé des principales nouveautés :    │ │
+│ │                                        │ │
+│ │ Empilement des notifications :         │ │
+│ │ Cette mise à jour commence par le      │ │
+│ │ centre de notifications avec une       │ │
+│ │ nouvelle fonctionnalité vous           │ │
+│ │ permettant de grouper les              │ │
+│ │ notifications par application.         │ │
+│ │ Cela améliore l'organisation           │ │
+│ │ et facilite la navigation.             │ │
+│ │                                        │ │
+│ │ Mise à jour de la visionneuse          │ │
+│ │ d'images :                             │ │
+│ │ GNOME met à jour sa visionneuse        │ │
+│ │ d'images par défaut, introduite dans   │ │
+│ │ la version 45. Elle ajoute une         │ │
+│ │ fonction d'édition d'images simple,    │ │
+│ │ permettant de rogner, recadrer et      │ │
+│ │ faire pivoter une image. Cette version │ │
+│ │ améliore également la prise en charge  │ │
+│ │ des métadonnées et du format RAW.      │ │
+│ │                                        │ │
+│ │ Bien-être numérique:                   │ │
+│ │ GNOME introduit une nouvelle           │ │
+│ │ fonctionnalité accessible dans les     │ │
+│ │ paramètres, permettant de visualiser   │ │
+│ │ le temps passé sur son appareil.       │ │
+│ │ Un historique des jours et semaines    │ │
+│ │ précédents est disponible, ainsi       │ │
+│ │ qu'une option pour limiter son temps   │ │
+│ │ d'utilisation avec une durée           │ │
+│ │ journalière définie.                   │ │
+│ │                                        │ │
+│ │ HDR:                                   │ │
+│ │ GNOME introduit enfin le HDR           │ │
+│ │ (High Dynamic Range) au niveau du      │ │
+│ │ système, permettant aux utilisateurs   │ │
+│ │ possédant un écran compatible          │ │
+│ │ d'afficher du contenu en HDR dans les  │ │
+│ │ applications qui le prennent en        │ │
+│ │ charge. Cependant, le nombre           │ │
+│ │ d'applications compatibles reste       │ │
+│ │ limité.                                │ │
+│ │                                        │ │
+│ │ Autres nouveautés:                     │ │
+│ │ Au-delà des améliorations de           │ │
+│ │ performances et des corrections de     │ │
+│ │ bugs, GNOME change sa police           │ │
+│ │ d'interface et de terminal par         │ │
+│ │ défaut pour Adwaita Sans et            │ │
+│ │ Adwaita Mono.                          │ │
+│ │ Plusieurs nouvelles applications       │ │
+│ │ accompagnent cette version :           │ │
+│ │                                        │ │
+│ │ · Audio Player :                       │ │
+│ │   - Une application minimaliste        │ │
+│ │     de lecture de fichiers audio.      │ │
+│ │                                        │ │
+│ │ · Drum Machine :                       │ │
+│ │   - Un programme simple permettant la  │ │
+│ │     création et l'écoute de            │ │
+│ │     "Drum Patterns".                   │ │
+│ │                                        │ │
+│ │ · Iotas :                              │ │
+│ │   - Une application de prise de notes  │ │
+│ │     rappelant Notion.                  │ │
+│ │                                        │ │
+│ │ · Keypunch :                           │ │
+│ │   - Un programme d'entraînement à la   │ │
+│ │     dactylographie.                    │ │
+│ │                                        │ │
+│ │ · Exercise Timer :                     │ │
+│ │   - Une application minimaliste pour   │ │
+│ │     créer des minuteurs pour le sport. │ │
+│ │                                        │ │
+│ └────────────────────────────────────────┘ │
+│ ┌────────────────────────────────────────┐ │
+│ │Publié le: 22/03/2025                   │ │
+│ │Cathégories : Linux, Mise à jours,      │ │
+│ │              Logiciel, Open Source     │ │
+│ └────────────────────────────────────────┘ │
+│                                            │
+└────────────────────────────────────────────┘
+    </pre>
+    <script>
+        if (window.matchMedia("min-width: 768px").matches) {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

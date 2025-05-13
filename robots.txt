@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /blog/2025/
+Allow: /blog/
+Allow: /blog/2025/03/22/gnome-45-quoi-de-neuf/
+Sitemap: https://axo.waves-studio.xyz/sitemap.xml

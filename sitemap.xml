@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://axo.waves-studio.xyz/</loc>
+        <lastmod>2025-03-22</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://axo.waves-studio.xyz/mobile.html</loc>
+        <lastmod>2025-03-22</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://axo.waves-studio.xyz/blog/</loc>
+        <lastmod>2025-03-22</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://axo.waves-studio.xyz/blog/2025/03/22/gnome-45-quoi-de-neuf/</loc>
+        <lastmod>2025-03-22</lastmod>
+        <priority>0.6</priority>
+    </url>
+</urlset>
